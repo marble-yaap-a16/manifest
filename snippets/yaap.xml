@@ -11,12 +11,16 @@
            fetch="https://github.com/yaap"
            revision="refs/heads/sixteen" />
 
+  <remote  name="macka-yaap"
+           fetch="https://github.com/marble-yaap-a16"
+           revision="refs/heads/sixteen" />
+
   <!-- General -->
   <project path="art" name="art" remote="yaap" />
   <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="yaap" />
   <project path="bootable/recovery" name="bootable_recovery" remote="yaap" />
   <project path="bionic" name="bionic" remote="yaap" />
-  <project path="manifest" name="manifest" remote="yaap" />
+  <project path="manifest" name="manifest" remote="macka-yaap" />
 
   <!-- Build -->
   <project path="build/make" name="build_make" remote="yaap" >
@@ -28,13 +32,13 @@
    <linkfile src="target" dest="build/target" />
    <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="yaap" >
+  <project path="build/soong" name="build_soong" remote="macka-yaap" >
    <linkfile src="root.bp" dest="Android.bp" />
    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="yaap" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="macka-yaap" />
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="yaap" />
   <project path="device/qcom/common" name="device_qcom_common" remote="yaap" />
   <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr_legacy-um" remote="yaap" />
@@ -74,8 +78,8 @@
   <project path="external/zstd" name="external_zstd" remote="yaap" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="frameworks_av" remote="yaap" />
-  <project path="frameworks/base" name="frameworks_base" remote="yaap" />
+  <project path="frameworks/av" name="frameworks_av" remote="macka-yaap" />
+  <project path="frameworks/base" name="frameworks_base" remote="macka-yaap" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="yaap" />
   <project path="frameworks/minikin" name="frameworks_minikin" remote="yaap" />
   <project path="frameworks/native" name="frameworks_native" remote="yaap" />
@@ -89,7 +93,7 @@
   <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="yaap" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="yaap" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="yaap" />
-  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="yaap" />
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="macka-yaap" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="yaap" />
   <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="yaap" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="yaap" />
@@ -105,7 +109,7 @@
   <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom-caf_sm8650_media" remote="yaap" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="yaap" />
   <project path="hardware/qcom-caf/thermal" name="hardware_qcom-caf_thermal" remote="yaap" />
-  <project path="hardware/qcom-caf/common" remote="yaap" name="hardware_qcom-caf_common" >
+  <project path="hardware/qcom-caf/common" remote="macka-yaap" name="hardware_qcom-caf_common" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -161,7 +165,7 @@
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="yaap" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="yaap" />
   <project path="packages/apps/KProfiles" name="packages_apps_KProfiles" remote="yaap" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="yaap" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="macka-yaap" />
   <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="yaap" />
   <project path="packages/apps/Matlog" name="packages_apps_Matlog" remote="yaap" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="yaap" />
@@ -171,8 +175,8 @@
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="yaap" />
   <project path="packages/apps/Ripple" name="CalyxOS/platform_packages_apps_Ripple" remote="github" revision="android15-qpr2" />
   <project path="packages/apps/Seedvault" name="packages_apps_Seedvault" remote="yaap" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="yaap" />
-  <project path="packages/apps/Settings/YASP" name="packages_apps_YASP" remote="yaap" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="macka-yaap" />
+  <project path="packages/apps/Settings/YASP" name="packages_apps_YASP" remote="macka-yaap" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="yaap" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="yaap" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="yaap" />
@@ -212,7 +216,7 @@
   <project path="system/media" name="system_media" remote="yaap" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" remote="yaap" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="yaap" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="yaap" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="macka-yaap" />
   <project path="system/update_engine" name="system_update_engine" remote="yaap" />
   <project path="system/vold" name="system_vold" remote="yaap" />
 
@@ -234,7 +238,7 @@
   <project path="vendor/qcom/common" name="yaosp/vendor_qcom_common" remote="gitlab" revision="sixteen" />
   <project path="vendor/microg" name="vendor_microg" remote="yaap" />
   <project path="vendor/themes" name="vendor_themes" remote="yaap" />
-  <project path="vendor/yaap" name="vendor_yaap" remote="yaap" />
+  <project path="vendor/yaap" name="vendor_yaap" remote="macka-yaap" />
   <project path="vendor/yaap/apps" name="vendor_yaap_apps" remote="yaap" clone-depth="1" />
 
 </manifest>
