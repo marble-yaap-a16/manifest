@@ -9,9 +9,6 @@
            fetch="https://git.codelinaro.org/clo/"
            revision="refs/tags/LA.QSSI.15.0.r1-10300-qssi.0" />
 
-  <!-- Device -->
-  <project path="device/qcom/qssi" name="android_device_qcom_qssi" remote="aospa" />
-
   <!-- Qcom Commonsys -->
   <project path="vendor/qcom/opensource/commonsys/dpm" name="la/platform/vendor/qcom-opensource/dpm-commonsys" remote="clo" />
 
