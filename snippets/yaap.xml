@@ -52,6 +52,7 @@
   <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="yaap" />
   <project path="external/avb" name="external_avb" remote="yaap" />
   <project path="external/bash" name="external_bash" remote="yaap" />
+  <project path="external/dng_sdk" name="external_dng_sdk" remote="yaap" />
   <project path="external/dtc" name="external_dtc" remote="yaap" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="yaap" />
   <project path="external/erofs-utils" name="external_erofs-utils" remote="yaap" />
