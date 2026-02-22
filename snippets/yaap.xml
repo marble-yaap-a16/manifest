@@ -212,6 +212,7 @@
   <!-- System -->
   <project path="system/bpf" name="system_bpf" remote="yaap" />
   <project path="system/core" name="system_core" remote="macka-yaap" />
+  <project path="system/extras" name="system_extras" remote="yaap" />
   <project path="system/libvintf" name="system_libvintf" remote="yaap" />
   <project path="system/media" name="system_media" remote="yaap" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" remote="yaap" />
