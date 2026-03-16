@@ -141,6 +141,7 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
   </project>
+  <project path="hardware/st/nfc" name="hardware_st_nfc" remote="yaap" />
 
   <!-- Kernel -->
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />
@@ -189,6 +190,7 @@
   <project path="packages/modules/Nfc" name="packages_modules_Nfc" remote="yaap" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="yaap" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="yaap" />
+  <project path="packages/modules/Virtualization" name="packages_modules_Virtualization" remote="yaap" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="yaap" />
   <project path="packages/providers/BlockedNumberProvider" name="packages_providers_BlockedNumberProvider" remote="yaap" />
   <project path="packages/providers/BookmarkProvider" name="packages_providers_BookmarkProvider" remote="yaap" />
